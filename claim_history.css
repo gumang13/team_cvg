@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 20px;
+}
+/* ====== 전체 ====== */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#cardBox{
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+#title {
+  margin-bottom: 20px;
+}
+
+#title h1 {
+  font-size: 24px;
+}
+
+
+.main {
+  display: flex;        
+  gap: 20px;
+}
+
+/*==왼쪽카드==*/
+.cardleft {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.cards{
+  padding: 50px;
+}
+/*==오른쪽카드==*/
+.cardright {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/* ====== 카드 제목 ====== */
+.card h2{
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+/* ====== 입력 폼 ====== */
+.form-group{
+  margin-bottom: 12px;
+}
+
+label{
+  display: block;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+input{
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+
+/* ====== 버튼 ====== */
+.buttons {
+  margin-top: 10px;
+}
+
+#bt1 {
+  padding: 8px 14px;
+  border: none;
+  background-color: #3b82f6;
+  color: white;
+  cursor: pointer;
+  margin-right: 6px;
+}
+#bt2 {
+  padding: 8px 14px;
+  border: none;
+  background-color: #f73f3f;
+  color: white;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+
+
+
+button:hover {
+  background-color: #2563eb;
+}
+
+/* ====== 상태 표시 ====== */
+.status1 {
+  margin-top: 12px;
+  font-size: 13px;
+  color: green;
+}
+.status2 {
+  margin-top: 12px;
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+}
+
+
+/* ====== 테이블 ====== */
+table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td{
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 13px;
+}
+
+th{
+  background: #eee;
+}
+
+
+img{
+  display: block;
+  width: 20px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.table-body tr td:nth-child(1),
+.table-body tr td:nth-child(2),
+.table-body tr td:nth-child(3),
+.table-body tr td:nth-child(4){
+    text-align: center;
+}
