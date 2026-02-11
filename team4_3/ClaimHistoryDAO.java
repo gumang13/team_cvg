@@ -31,7 +31,7 @@ public class ClaimHistoryDAO {
 		int result = 0;
 		String sql="""
                       insert into claim_history
-                      (lost_item_id, owner_claim_id, date) 
+                      (lost_item_id, owner_claim_id, action_date) 
                       values (?, ?, now())
                    """;
 		try (																	  //코드가 끝나면 자동실행
@@ -52,10 +52,10 @@ public class ClaimHistoryDAO {
 	public List<ClaimHistoryDTO> selectAllLostItemId(long lostItemId){
 		List<ClaimHistoryDTO> list = new ArrayList<>();
 		String sql = """
-				        select id, lost_item_id, owner_claim_id, date
+				        select id, lost_item_id, owner_claim_id, action_date
 				        from claim_history
 				        Where lost_item_id=?
-				        order by date desc
+				        order by action_date desc
 				     """;
 		
 		try (
