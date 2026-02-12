@@ -1,6 +1,5 @@
 const menu = document.querySelectorAll('.메뉴');
 
-
 menu.forEach(a => {
    
     a.addEventListener('mouseenter', () => {
