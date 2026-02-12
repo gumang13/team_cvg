@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
 }
-.baseWrap{
+.baseWrap {
   width: 1920px;
   background-color: #c8edfd;
   background-image: url(./bg_spring-homepage.png);
@@ -18,7 +18,7 @@
 .header {
   width: 100vw;
   height: 70px;
-  background:#c8edfd;
+  background: #c8edfd;
   display: flex;
   align-items: center;
   position: fixed;
@@ -231,23 +231,28 @@
   height: 100px;
   width: 1920px;
   background-color: #c8edfd;
-  position: relative;
-  display: flex;
-  padding-top: 30px;
-  gap: 200px
-  ;
 }
-.footerLogo{
-    flex: 1;
+.footerBox {
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 30px 0;
   position: relative;
-} 
-.footerText{
+}
+.footerLogo {
   flex: 1;
   position: relative;
 }
-.footerLogo div{
+.footerText {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.footerLogo div {
   position: absolute;
-  right: 0px;
+  left: 0;
   top: 0px;
   width: 115px;
   height: 50px;
@@ -255,10 +260,10 @@
   background-position: center;
   background-image: url(./로고\(완\).png);
 }
-.footerText div{
+.footerText div {
+  flex: 1;
   font-size: 16px;
+  text-align: right;
   font-weight: 500;
-  text-align: left;
   align-items: center;
 }
-  

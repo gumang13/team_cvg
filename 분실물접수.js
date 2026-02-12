@@ -25,7 +25,7 @@ window.onload = function () {
     if (dd.value != "") count++;
 
     if (count === 4) {
-      alert("등록이 완료되었습니다");
+      alert("접수가 완료되었습니다");
       return;
     } else {
       alert("입력되지않은 정보가 있습니다.");
