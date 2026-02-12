@@ -3,21 +3,83 @@
   padding: 0;             
   box-sizing: border-box; 
 }
-
+html, body { height: 100%; }
 /* body 부분이고 헤더부분이 들어오면 빠질거 배경도 통일할부분 */
 body{
-  padding: 20px; 
-  background: hsl(192, 100%, 99%);         
+  margin: 0;
+   
+  background: #c8edfd;  
+  background-image: url('https://troov.com/images/back-to-school/bg_spring-homepage.png');       
+  display: flex;
+  flex-direction: column;
+  
 }
+
+.header{
+   width: 100%;
+   height: 70px;
+   background: #c8edfd;
+   display: flex;
+   align-items: center;
+   position: relative;
+}
+
+.logo{
+   width: 150px;
+   height: 50px;
+   margin-left: 193px; 
+}
+.logo img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.menu{
+   width: 600px;
+   height: 50px;
+   background: #c8edfd;
+   right: 100px;
+   position: absolute;
+   display: flex;
+   align-items: center;
+   
+}
+.menu ul{
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+}
+.menu ul li{
+   margin: 0 10px;
+   color: white;
+   font-weight: bold;
+   cursor: pointer;
+   padding: 10px 20px;
+}
+.menu ul li a{
+   text-decoration: none;
+   color: #495057;
+}
+
+
+/*===============================여기까지 메뉴======================================*/
 
 /* ====== 컨테이너 ====== */
 .container {
   width: 1200px;          
-  margin: 0 auto;         
+  margin: 0 auto;    
+  flex: 1;
+
+  display: flex;           /* ✅ 추가 */
+  flex-direction: column;  /* ✅ 추가 */     
 }
 
 /* 카드 전체를 감싸는 박스 */
 #main{
+  
+  margin-top: 150px;
   background-color: #fff;                     
   border: 1px solid #ccc;                     
   padding: 30px;                                
@@ -107,7 +169,7 @@ input{
   color: white;                  
   margin-right: 6px;  
   border-radius: 5px; 
-  border: 2px solid #676767;   
+  border: 2px solid #424242;   
 }
 #bt1:hover {
   background-color: #0f48c2; 
@@ -118,15 +180,15 @@ input{
 #bt2 {
   padding: 8px 14px;
   border: none;
-  background-color: #f75656; 
-  color: rgb(0, 0, 0);
+  background: #707070; 
+  color: rgb(237, 237, 237);
   cursor: pointer;
   margin-right: 6px;
   border-radius: 5px;
-  border: 2px solid #676767;
+  border: 2px solid #424242;
 }
 #bt2:hover {
-  background-color: #a91111; 
+  background-color: #454545; 
   cursor: pointer;
   color: rgb(255, 255, 255);
 }
@@ -138,10 +200,11 @@ input{
   background: rgb(204, 238, 202);
   margin-top: 12px;
   padding: 5px 10px;
-  border: 1px solid green;
+  border: 1px solid #2e7d32;
   border-radius: 14px;
   font-size: 13px;
-  color: green;           
+  font-weight: 700;
+  color: #2e7d32;           
 }
 
 .status2 {
@@ -150,10 +213,11 @@ input{
   background: rgb(202, 219, 238);
   margin-top: 12px;
   padding: 5px 10px;
-  border: 1px solid blue;
+  border: 1px solid #1e40af;
   border-radius: 14px;
   font-size: 13px;
-  color: blue;    
+  font-weight: 700;
+  color: #1e40af;    
 }
 
 .history-row{
@@ -220,11 +284,11 @@ img{
   align-items: center;
   justify-content: center;
   padding: 4px 10px;
-  border-radius: 999px;
+  border-radius: 15px;
   font-size: 12px;
   font-weight: 700;
   line-height: 1;
-  vertical-align: middle; 
+  
   background: #d4f5d4;
   color: #2e7d32;
   border: 1px solid #2e7d32;
@@ -236,12 +300,59 @@ img{
   align-items: center;
   justify-content: center;
   padding: 4px 10px;
-  border-radius: 999px;
+  border-radius: 15px;
   font-size: 12px;
   font-weight: 700;
   line-height: 1;
-  vertical-align: middle; 
+  
   background: #e0ecff;
   color: #1e40af;
   border: 1px solid #1e40af;
 }
+
+/* footer*/
+.footer {
+  height: 100px;
+  width: 100%;
+  background-color: #c8edfd;
+}
+
+.footerBox {
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 30px 0;
+  position: relative;
+}
+.footerLogo {
+  flex: 1;
+  position: relative;
+}
+.footerText {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.footerLogo div {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 115px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./KakaoTalk_20260212_162837731.png);
+}
+.footerText div {
+  flex: 1;
+  font-size: 16px;
+  text-align: right;
+  font-weight: 500;
+  align-items: center;
+}
+.container{
+  flex: 1;
+}
+

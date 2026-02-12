@@ -3,17 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>수령 처리 · 이력 관리</title>
     <link rel="stylesheet" href="./claim_history.css">
+    <script src="./menu.js" defer></script>
 </head>
 
 
 <body>
-<div class="container">
-  <!--헤더 ? 메뉴 -->
+  
     <header>
-
-  </header>  
+        <!-- 헤더영역 -->
+    <div class="header">
+        <div class="logo">
+            <img src="./KakaoTalk_20260212_162837731.png">
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li class="메뉴"><a href="#">분실물 등록</a></li>
+                    <li class="메뉴"><a href="./frame.html">분실물 목록</a></li>
+                    <li class="메뉴"><a href="./owner_claim.html">분실물 찾기</a></li>
+                    <li class="메뉴"><a href="./claim_history.html">수령·이력 관리</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    </header>
+    
+<div class="container">
     
     <!-- 메인 -->
 <main id="main">
@@ -70,7 +87,7 @@
               </div>
           </div>
           
-          <table>
+          <table id="table">
             <thead>
               <tr>
                 <th class="num">번호</th>
@@ -124,10 +141,23 @@
       </div>
     </div>
   </main>
-  <footer>
-    
-  </footer>
-
+  
+  
+  
 </div>
+<footer>
+   <!--footer영역-->
+    <div class="footer">
+      <div class="footerBox">
+        <div class="footerLogo">
+          <div></div>
+        </div>
+        <div class="footerText">
+          <div>대전 중구 중앙로 121번길 20 방산빌딩</div>
+          <div>0507-1422-2402</div>
+        </div>
+      </div>
+    </div>
+</footer>
 </body>
 </html>
