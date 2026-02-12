@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수령 처리 · 이력 관리</title>
+    <link rel="stylesheet" href="./claim_history.css">
+    
+</head>
+
+
+<body>
+  
+    <header>
+        <!-- 헤더영역 -->
+    <div class="header">
+         <div class="logo">로고</div>
+         <div class="menu">
+            <nav>
+                <ul>
+                    <div id="메뉴"><li><a href="./frame.html">메뉴1</a></li></div>
+                    <div id="메뉴2"><li><a href="#">메뉴2</a></li></div>
+                    <div id="메뉴3"><li><a href="#">메뉴3</a></li></div>
+                    <div id="메뉴4"><li><a href="./claim_history.html">처리 및 조회</a></li></div>
+                </ul>
+            </nav>
+         </div>
+         
+     </div>
+
+    </header>
+    
+<div class="container">
+    
+    <!-- 메인 -->
+<main id="main">
+  <div class="bigbox">
+    <div id="title">
+      <h1>수령 처리 · 이력 관리</h1>
+      <p>분실물 관리 시스템 </p>
+    </div>
+    <div class="cradbox">
+      <!-- 수령 처리 -->
+      <div class="cardleft"> 
+         <div>
+            <h2>수령 처리</h2>
+            <div class="form-group">
+               <label>분실물ID</label>
+               <input type="text" placeholder="예: 3">
+            </div>
+            <div class="form-group">
+              <label>분실주인ID</label>
+              <input type="text" placeholder="예: 7">
+            </div>
+            <div class="buttons">
+              <button id="bt1">반환 완료</button>
+              <button id="bt2">입력 초기화</button>
+            </div>
+            <div>
+              <div class="status1">상태: 반환완료</div>
+              <div class="status2">상태: 보관중</div>
+            </div>
+            
+         </div>  
+      </div>
+      
+     
+      <div class="cardright">
+        <div>
+          <div class="history-row">
+
+              <div class="history-col">
+                  <label>조회할 분실물 ID</label>
+                  <input type="text" placeholder="예: 3">
+              </div>
+
+              <div class="history-right">
+                  <label>필터(선택)</label>
+                  <div class="history-controls">
+                    <select id="select">
+                        <option>전체</option>
+                        <option>반환완료</option>
+                        <option>보관중</option>
+                    </select>
+                    <button class="find">조회</button>
+                  </div>
+              </div>
+          </div>
+          
+          <table id="table">
+            <thead>
+              <tr>
+                <th class="num">번호</th>
+                <th class="lost_item_id">분실물 ID</th>
+                <th class="date">처리일시</th>
+                <th class="state">상태</th>
+                <th class="">상세보기</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>5</td>
+                <td>3</td>
+                <td>2026-02-10 09:12</td>
+                <td><span class="claimed">반환완료</span></td>
+                <td> <img src="./돋보기.png" alt="이미지"></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>2</td>
+                <td>2026-02-07 20:12</td>
+                <td><span class="claimed">반환완료</span></td>
+                <td> <img src="./돋보기.png" alt="이미지"></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>8</td>
+                <td>2026-02-05 18:40</td>
+                <td><span class="matched">보관중</span></td>
+                <td> <img src="./돋보기.png" alt="이미지"></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>10</td>
+                <td>2026-02-04 14:40</td>
+                <td><span class="claimed">반환완료</span></td>
+                <td> <img src="./돋보기.png" alt="이미지"></td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>5</td>
+                <td>2026-02-01 11:40</td>
+                <td><span class="matched">보관중</span></td>
+                <td> <img src="./돋보기.png" alt="이미지"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+  </main>
+  <footer>
+    
+  </footer>
+
+</div>
+</body>
+</html>
