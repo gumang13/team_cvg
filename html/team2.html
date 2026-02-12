@@ -14,14 +14,14 @@
     <header>
         <!-- 헤더영역 -->
     <div class="header">
-         <div class="logo">로고</div>
+         <div class="logo"><a href="Main.html"><img src="./사진폴더/로고(완).png" alt=""></a></div>
          <div class="menu">
             <nav>
                 <ul>
-                    <div id="메뉴"><li><a href="./frame.html">메뉴1</a></li></div>
-                    <div id="메뉴2"><li><a href="#">메뉴2</a></li></div>
-                    <div id="메뉴3"><li><a href="#">메뉴3</a></li></div>
-                    <div id="메뉴4"><li><a href="./claim_history.html">처리 및 조회</a></li></div>
+                    <div class="메뉴"><li><a href="./team1.html">분실물 등록</a></li></div>
+                    <div class="메뉴"><li><a href="">분실물 목록</a></li></div>
+                    <div class="메뉴"><li><a href="./team3.html">분실물 찾기</a></li></div>
+                    <div class="메뉴"><li><a href="./team4.html">수령·이력 관리</a></li></div>
                 </ul>
             </nav>
          </div>
@@ -60,6 +60,7 @@
 
 
   </div>
+  <div><hr> </div>
   <!--    사진영역   -->
     <div><div class="fontWrap"><h1>분실물 목록</h1></div></div>
     <div class="fontWrap">
@@ -101,10 +102,53 @@
      <div></div>
   </div>
   </main>
-  <footer>
-    
-  </footer>
-
 </div>
 </body>
+  <footer>
+      <div class="footerBox">
+        <div class="footerLogo">
+            <div><img src="./사진폴더/team4 분실물관리 로고.png" alt=""></div>
+        </div>
+        <div class="footerText">
+            <div>대전 중구 중앙로 121번길 20 방산빌딩</div>
+            <div>0507-1422-2402</div>
+        </div>
+        </div>
+  </footer>
+
 </html>
+<script>
+
+
+const menu = document.querySelectorAll('.메뉴');
+
+
+menu.forEach(a => {
+   
+    a.addEventListener('mouseenter', () => {
+        a.style.transform = "scale(1.2)";
+        a.style.transition = "transform 0.3s ease";
+    });
+
+   
+    a.addEventListener('mouseleave', () => {
+        a.style.transform = "scale(1.0)";
+    });
+});
+ 
+const imgs = document.querySelectorAll('.category');
+
+
+imgs.forEach(img => {
+   
+    img.addEventListener('mouseenter', () => {
+        img.style.transform = "scale(1.1)";
+        img.style.transition = "transform 0.3s ease";
+    });
+
+   
+    img.addEventListener('mouseleave', () => {
+        img.style.transform = "scale(1.0)";
+    });
+});
+</script>

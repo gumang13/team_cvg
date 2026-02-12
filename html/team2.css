@@ -5,49 +5,48 @@
 }
 /* body 부분이고 헤더부분이 들어오면 빠질거 배경도 통일할부분 */
 body{
-  padding: 20px; 
+  
   background: #c8edfd;  
   background-image: url('https://troov.com/images/back-to-school/bg_spring-homepage.png');       
   
-  
+  background-repeat: no-repeat; 
 }
+
 .header{
    width: 100%;
    height: 70px;
-  background: c8edfd;
-  display: flex;
-  align-items: center;
-  position: relative;
+   background: #c8edfd;
+   display: flex;
+   align-items: center;
+   position: relative;
 }
 
 .logo{
-   width: 115px;
+   width: 150px;
    height: 50px;
-   
    margin-left: 193px; 
-   background-image: url('/로고3-3.png');
-   background-size: cover; /* 이미지가 화면에 가득 차게 설정 */
-   background-repeat: no-repeat;
+}
+.logo img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
 }
 .menu{
-   width: 500px;
+   width: 600px;
    height: 50px;
-   background: #60a7c5;
+   background: #c8edfd;
    right: 100px;
    position: absolute;
-   border-radius: 8px;  
+   display: flex;
+   align-items: center;
+   
 }
-
-
-
 .menu ul{
    list-style: none;
    display: flex;
    justify-content: space-between;
    align-items: center;
    height: 100%;
-
-   
 }
 .menu ul li{
    margin: 0 10px;
@@ -58,9 +57,9 @@ body{
 }
 .menu ul li a{
    text-decoration: none;
-   color: white;
-  
+   color: #495057;
 }
+
 /*---- 바디 영역 ----*/
 .mainBox{
    width: 100%;
@@ -208,8 +207,10 @@ body{
 
 /* ====== 컨테이너 ====== */
 .container {
-  width: 1200px;          
-  margin: 0 auto;         
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  width: 600px;          
+  margin: 0 auto;  
+  border-radius: 16px;       
 }
 
 /* 카드 전체를 감싸는 박스 */
@@ -218,46 +219,52 @@ body{
   background-color: #fff;                     
   border: 1px solid #ccc;                     
   padding: 30px;                                
-  border-radius: 8px;                           
+    border-radius: 16px;                              
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3),
               0 4px 8px 0 rgba(0, 0, 0, 0.3); 
 }
 .searchWrap{
     height: 430px;
-    width: 1140px;
+    width: 100%;
     background: #fff;
 }
 .swhead{
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
+
+hr{
+   border: 1px solid #b4b4b4;
+   margin-bottom: 30px;
+}
 .swareaWrap{
-    width: 800px;
+    width: 100%;
     height: 300px;
     background: white;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap:30px;
+  
     justify-content: center;
     align-items: center;
 }
 .swarea{
-    display: flex;
+    width: 100%;
     margin-top: 20px;
-    height: 40px;
-    align-items: center;
+    height: 100%;
+    
 }
 .swarea input{
 
-              /* 남은 공간을 인풋이 다 차지하게 함 (길게 만들고 싶을 때) */
-    width: 400px;     /* 너무 길어지는 것 방지 */
-    padding: 10px;        /* 인풋 안쪽 공간 확보 */
+             
+    width: 100%;      
+    padding: 10px;        
     border: 1px solid #ccc;
-    border-radius: 4px;   /* 살짝 둥근 모서리 */
-
+    
+  border-radius: 8px;     
+  margin-top: 12px;
 
   
    
@@ -265,11 +272,12 @@ body{
    
 }
 .swarea label{
-    width: 180px;         
-    font-weight: bold;
-    text-align: left;    
+    width: 100%;         
+    
+    text-align: center;    
     margin-right: 20px;
-    font-size: 24px;
+    font-size: 14px;
+    
 
   
    
@@ -281,20 +289,22 @@ body{
     display: flex;
     justify-content: center;
     
-}
-.categoryWrap{
-    width: 1000px;
+   }
+   .categoryWrap{
+   align-items: center;
+    width: 600px;
     background: #fff;
-    height: 400px;
+    height: 900px;
     padding-top: 50px;
     border-radius: 8px;
     flex-wrap: wrap;
-    gap: 10px;
+    gap : 40px;
     display: flex;
     margin: 12px;
+    justify-content: center;
 }
 .category{
-    width: 240px;
+    width: 220px;
     height: 180px;
     background-color: #fff;
     border-radius: 9px;
@@ -333,4 +343,51 @@ body{
     
     border-radius: 9px;
     padding-top: 5px;
+}
+/*  푸터 */
+.footer {
+  height: 100px;
+  width: 100%;
+  background-color: #c8edfd;
+}
+.footerBox {
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 30px 0;
+  position: relative;
+  
+}
+.footerLogo {
+  flex: 1;
+  position: relative;
+}
+.footerLogo img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.footerText {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.footerLogo div {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 115px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./KakaoTalk_20260212_162837731.png);
+}
+.footerText div {
+  flex: 1;
+  font-size: 16px;
+  text-align: right;
+  font-weight: 500;
+  align-items: center;
 }
