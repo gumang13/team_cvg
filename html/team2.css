@@ -1,0 +1,393 @@
+* {
+  margin: 0;              
+  padding: 0;             
+  box-sizing: border-box; 
+}
+/* body 부분이고 헤더부분이 들어오면 빠질거 배경도 통일할부분 */
+body{
+  
+  background: #c8edfd;  
+  background-image: url('https://troov.com/images/back-to-school/bg_spring-homepage.png');       
+  
+  background-repeat: no-repeat; 
+}
+
+.header{
+   width: 100%;
+   height: 70px;
+   background: #c8edfd;
+   display: flex;
+   align-items: center;
+   position: relative;
+}
+
+.logo{
+   width: 150px;
+   height: 50px;
+   margin-left: 193px; 
+}
+.logo img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.menu{
+   width: 600px;
+   height: 50px;
+   background: #c8edfd;
+   right: 100px;
+   position: absolute;
+   display: flex;
+   align-items: center;
+   
+}
+.menu ul{
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+}
+.menu ul li{
+   margin: 0 10px;
+   color: white;
+   font-weight: bold;
+   cursor: pointer;
+   padding: 10px 20px;
+}
+.menu ul li a{
+   text-decoration: none;
+   color: #495057;
+}
+
+/*---- 바디 영역 ----*/
+.mainBox{
+   width: 100%;
+   height: 500px;
+   background:  #c8edfd;
+}
+.mainBox2{
+   width: 100%;
+   height: 1000px;
+   background: #bbb;
+}
+.mainWrap{
+   width: 100%;
+   height: 100%;
+   background: #c8edfd;
+   margin: 0 auto;
+}
+.content{
+   width: 80%;
+   height: 100%;
+   
+   margin: 0 auto;
+   display: flex;
+   background: #c8edfd;
+}
+.main1{
+   width: 110%;
+   height: 100%;
+   
+  
+}
+.main2{
+   width: 90%;
+   height: 100%;
+   
+ 
+}
+.main2 img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.main1_1{
+   
+   width: 100%;
+   margin-top: 50px;
+   height: 170px;
+   color: #bbb;
+}
+.main1_2{
+  
+   width: 100%;
+   
+   height: 100px;
+    color: #bbb;
+}
+.main1_3{
+   
+   width: 100%;
+   margin-top: 10px;
+   height: 70px;
+    color: #bbb;
+   display: flex;
+   justify-content: center;
+   
+}
+.mainButton1{
+   width: 40%;
+   height: 50px;
+   margin: 10px;
+   background: rgb(85, 85, 85);
+   border: none;
+   color: white;
+   font-weight: bold;
+   cursor: pointer;
+}
+.mainButton2{
+   width: 40%;
+   height: 50px;
+   margin: 10px;
+   background: rgb(85, 85, 85);
+   border: none;
+   color: white;
+   font-weight: bold;
+   cursor: pointer;
+}
+.mainBox2_1{
+   margin-top: 60px;
+   height: 80px;
+   
+   margin:  0 auto;
+   margin-top:  50px;
+   display: flex;
+   justify-content: center;
+   
+}
+.mainBox2_2{
+ height: 380px;
+
+}
+.mainBox2_3{
+ height: 200px;
+ 
+ width: 1100px;
+ margin: 0 auto;
+ padding: 20px;
+ display: flex;
+ align-items: center;
+ 
+}
+.icon{
+   width: 128px;
+   height: 128px;
+   background: #333;
+   padding: 24px;
+}
+.icon img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   background: black;
+}
+.bottomTextBox{
+  width: calc(100% - 128px - 48px);
+   height:128px;
+   background: #bbb;
+}
+.bottomText1{
+   margin-top: 24px;
+   height: 32px;
+   margin-left: 24px;
+   font-weight: bold;
+    font-size: 25px;
+}
+
+.bottomText2{
+   height: 47px;
+   margin-top: 12px;
+   margin-left: 24px;
+ 
+}
+
+
+/*===============================여기까지 메뉴======================================*/
+
+/* ====== 컨테이너 ====== */
+.container {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  width: 600px;          
+  margin: 0 auto;  
+  border-radius: 16px;       
+}
+
+/* 카드 전체를 감싸는 박스 */
+#main{
+  margin-top: 150px;
+  background-color: #fff;                     
+  border: 1px solid #ccc;                     
+  padding: 30px;                                
+    border-radius: 16px;                              
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3),
+              0 4px 8px 0 rgba(0, 0, 0, 0.3); 
+}
+.searchWrap{
+    height: 430px;
+    width: 100%;
+    background: #fff;
+}
+.swhead{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+hr{
+   border: 1px solid #b4b4b4;
+   margin-bottom: 30px;
+}
+.swareaWrap{
+    width: 100%;
+    height: 300px;
+    background: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+    align-items: center;
+}
+.swarea{
+    width: 100%;
+    margin-top: 20px;
+    height: 100%;
+    
+}
+.swarea input{
+
+             
+    width: 100%;      
+    padding: 10px;        
+    border: 1px solid #ccc;
+    
+  border-radius: 8px;     
+  margin-top: 12px;
+
+  
+   
+    
+   
+}
+.swarea label{
+    width: 100%;         
+    
+    text-align: center;    
+    margin-right: 20px;
+    font-size: 14px;
+    
+
+  
+   
+}
+
+
+/* 그림 넣는 칸 */
+.fontWrap{
+    display: flex;
+    justify-content: center;
+    
+   }
+   .categoryWrap{
+   align-items: center;
+    width: 600px;
+    background: #fff;
+    height: 900px;
+    padding-top: 50px;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    gap : 40px;
+    display: flex;
+    margin: 12px;
+    justify-content: center;
+}
+.category{
+    width: 220px;
+    height: 180px;
+    background-color: #fff;
+    border-radius: 9px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3),
+              0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+.categoryImg{
+    background: #fff;
+    width: 200px;
+    height: 120px;
+    
+
+    
+}
+.categoryTxt{
+   background: #fff;
+    width: 200px;
+       height: 40px;
+}
+.categoryImg{
+    box-sizing: border-box;
+}
+.categoryImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+    object-fit: cover;
+}
+.categoryTxt{
+    font-size: 20px;
+    text-align: center;
+    
+    border-radius: 9px;
+    padding-top: 5px;
+}
+/*  푸터 */
+.footer {
+  height: 100px;
+  width: 100%;
+  background-color: #c8edfd;
+}
+.footerBox {
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 30px 0;
+  position: relative;
+  
+}
+.footerLogo {
+  flex: 1;
+  position: relative;
+}
+.footerLogo img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.footerText {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.footerLogo div {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 115px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(./KakaoTalk_20260212_162837731.png);
+}
+.footerText div {
+  flex: 1;
+  font-size: 16px;
+  text-align: right;
+  font-weight: 500;
+  align-items: center;
+}

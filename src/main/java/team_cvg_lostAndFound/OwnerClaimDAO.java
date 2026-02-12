@@ -10,7 +10,7 @@ import java.util.List;
 public class OwnerClaimDAO {
 	
     String dbDrv = "com.mysql.cj.jdbc.Driver";
-    String dbUrl = "jdbc:mysql://localhost:3306/tem4?serverTimezone=Asia/Seoul";
+    String dbUrl = "jdbc:mysql://codevlab.kr:3306/team4?serverTimezone=Asia/Seoul";
     String dbUsr = "team4";
     String dbPwd = "123456";
     
