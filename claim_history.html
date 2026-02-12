@@ -20,7 +20,7 @@
         <div class="menu">
             <nav>
                 <ul>
-                    <li class="메뉴"><a href="#">분실물 등록</a></li>
+                    <li class="메뉴"><a href="./frame.html">분실물 등록</a></li>
                     <li class="메뉴"><a href="./frame.html">분실물 목록</a></li>
                     <li class="메뉴"><a href="./owner_claim.html">분실물 찾기</a></li>
                     <li class="메뉴"><a href="./claim_history.html">수령·이력 관리</a></li>
@@ -46,15 +46,15 @@
             <h2>수령 처리</h2>
             <div class="form-group">
                <label>분실물ID</label>
-               <input type="text" placeholder="예: 3">
+               <input type="text" id="lostitemid" placeholder="예: 3">
             </div>
             <div class="form-group">
               <label>분실주인ID</label>
-              <input type="text" placeholder="예: 7">
+              <input type="text" id="claimid" placeholder="예: 7">
             </div>
             <div class="buttons">
-              <button id="bt1">반환 완료</button>
-              <button id="bt2">입력 초기화</button>
+              <button id="bt1" onclick="requestCheck()">반환 완료</button>
+              <button id="bt2" onclick="clearInput()">입력 초기화</button>
             </div>
             <div>
               <div class="status1">상태: 반환완료</div>
@@ -93,7 +93,7 @@
                 <th class="num">번호</th>
                 <th class="lost_item_id">분실물 ID</th>
                 <th class="date">처리일시</th>
-                <th class="state">상태</th>
+                <th class="state">상태/구분</th>
                 <th class="">상세보기</th>
               </tr>
             </thead>
