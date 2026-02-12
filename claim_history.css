@@ -1,158 +1,251 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0;              
+  padding: 0;             
+  box-sizing: border-box; 
 }
 
+/* body 부분이고 헤더부분이 들어오면 빠질거 배경도 통일할부분 */
 body{
-  padding: 20px;
+  padding: 20px; 
+  background: hsl(192, 100%, 99%);         
 }
-/* ====== 전체 ====== */
+
+/* ====== 컨테이너 ====== */
 .container {
-  width: 1200px;
-  margin: 0 auto;
+  width: 1200px;          
+  margin: 0 auto;         
 }
 
-#cardBox{
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+/* 카드 전체를 감싸는 박스 */
+#main{
+  background-color: #fff;                     
+  border: 1px solid #ccc;                     
+  padding: 30px;                                
+  border-radius: 8px;                           
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3),
+              0 4px 8px 0 rgba(0, 0, 0, 0.3); 
 }
 
+/* 제목 */
 #title {
-  margin-bottom: 20px;
+  margin-bottom: 20px;    
 }
-
 #title h1 {
-  font-size: 24px;
+  font-size: 24px;        
 }
 
 
-.main {
-  display: flex;        
-  gap: 20px;
+/*수령처리 , 처리 이력 조회 좌우 나누기*/
+.cradbox {
+  display: flex;          
+  gap: 20px;              
 }
 
-/*==왼쪽카드==*/
+/*  수령처리  */
 .cardleft {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 16px;
-  border-radius: 8px;
-  width: 40%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  background-color: #fff; 
+  border: 1px solid #ccc; 
+  padding: 26px;          
+  border-radius: 8px;     
+  width: 40%;             
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3),
+              0 6px 20px 0 rgba(0, 0, 0, 0.3); 
 }
-.cards{
-  padding: 50px;
-}
-/*==오른쪽카드==*/
+
+
+/* 처리이력조회 */
 .cardright {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 16px;
-  border-radius: 8px;
-  width: 60%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fff; 
+  border: 1px solid #ccc; 
+  padding: 26px;          
+  border-radius: 8px;     
+  width: 60%;             
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
 
-
-
-/* ====== 카드 제목 ====== */
+/*수령처리이력조회 제목*/
 .card h2{
-  font-size: 16px;
-  margin-bottom: 12px;
+  font-size: 16px;        
+  margin-bottom: 12px;    
 }
 
-/* ====== 입력 폼 ====== */
+/* 수령처리 라벨 인풋간격*/
 .form-group{
-  margin-bottom: 12px;
-}
-
-label{
-  display: block;
-  font-size: 13px;
-  margin-bottom: 4px;
-}
-
-input{
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-}
-
-
-/* ====== 버튼 ====== */
-.buttons {
   margin-top: 10px;
+  margin-bottom: 20px;    
+}
+/*이력조회 라벨 인풋간격*/
+.form-group2{
+  display: flex;
+  justify-content: space-between; /* 좌우 끝으로 배치 */
+  align-items: center;   
+  margin-top: 10px;
+  margin-bottom: 20px;    
 }
 
-#bt1 {
-  padding: 8px 14px;
-  border: none;
-  background-color: #3b82f6;
-  color: white;
-  cursor: pointer;
-  margin-right: 6px;
+/* 라벨 스타일 */
+label{
+  display: block;         
+  font-size: 13px;        
+  margin-bottom: 10px;     
 }
+
+/* 입력창 스타일 */
+input{
+  width: 100%;            
+  padding: 8px;           
+  border: 1px solid #616161; 
+  border-radius: 5px;
+}
+
+/* 첫 번째 버튼 */
+#bt1 {
+  padding: 8px 14px;      
+  border: none;           
+  background: #3180ff; 
+  color: white;                  
+  margin-right: 6px;  
+  border-radius: 5px; 
+  border: 2px solid #676767;   
+}
+#bt1:hover {
+  background-color: #0f48c2; 
+  cursor: pointer;
+}
+
+/* 두 번째 버튼 */
 #bt2 {
   padding: 8px 14px;
   border: none;
-  background-color: #f73f3f;
-  color: white;
+  background-color: #707070; 
+  color: rgb(237, 237, 237);
   cursor: pointer;
   margin-right: 6px;
+  border-radius: 5px;
+  border: 2px solid #676767;
+}
+#bt2:hover {
+  background-color: #454545; 
+  cursor: pointer;
+  color: rgb(255, 255, 255);
 }
 
-
-
-
-button:hover {
-  background-color: #2563eb;
-}
 
 /* ====== 상태 표시 ====== */
 .status1 {
+  display:inline-block;
+  background: rgb(204, 238, 202);
   margin-top: 12px;
+  padding: 5px 10px;
+  border: 1px solid green;
+  border-radius: 14px;
   font-size: 13px;
-  color: green;
+  color: green;           
 }
+
 .status2 {
+  display:block;
+  width: fit-content;
+  background: rgb(202, 219, 238);
   margin-top: 12px;
+  padding: 5px 10px;
+  border: 1px solid blue;
+  border-radius: 14px;
   font-size: 13px;
-  color: rgb(0, 0, 0);
+  color: blue;    
 }
+
+.history-row{
+  display: flex;
+  gap: 20px;
+}
+
+/* 왼쪽 오른쪽 반반 */
+.history-left,
+.history-right{
+  flex: 1;
+}
+/* select + 버튼 옆으로 */
+.history-controls{
+  display: flex;
+  gap: 8px;
+}
+.history-controls select,
+.history-controls button {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+.find{
+  background: #2e75e6; 
+  color: white;    
+}
+/* 버튼 hover 효과 */
+.find:hover {
+  background-color: #0f48c2; 
+  cursor: pointer;
+}
+
 
 
 /* ====== 테이블 ====== */
 table{
-  width: 100%;
+  width: 100%;            
   border-collapse: collapse;
   margin-top: 10px;
 }
-
 th, td{
-  border: 1px solid #ccc;
-  padding: 8px;
+  border: 1px solid #ccc; 
+  padding: 8px;           
   font-size: 13px;
+  text-align: center;
+  
 }
-
 th{
-  background: #eee;
+  background: #eee;     
 }
-
-
+/* 이미지 스타일 */
 img{
-  display: block;
-  width: 20px;
-  margin: 0 auto;
-  cursor: pointer;
+  display: block;         /* 가운데 정렬 위해 block */
+  width: 20px;            /* 크기 */
+  margin: 0 auto;         /* 가운데 정렬 */
+  cursor: pointer;        /* 클릭 가능 표시 */
 }
 
-.table-body tr td:nth-child(1),
-.table-body tr td:nth-child(2),
-.table-body tr td:nth-child(3),
-.table-body tr td:nth-child(4){
-    text-align: center;
+/* 반환완료 */
+.claimed{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  vertical-align: middle; 
+  background: #d4f5d4;
+  color: #2e7d32;
+  border: 1px solid #2e7d32;
+}
+
+/* 보관중 */
+.matched{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  vertical-align: middle; 
+  background: #e0ecff;
+  color: #1e40af;
+  border: 1px solid #1e40af;
+}
+
+#table{
+
 }
