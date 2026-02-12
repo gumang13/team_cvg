@@ -1,4 +1,4 @@
-package lostAndFound;
+package team_cvg_lostAndFound;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -85,7 +85,6 @@ public class OwnerClaimDAO {
 	}
 	// 매칭 처리
 	public int updateMatched(long owner_claim_id) {
-		
 		
 		try {
 			Class.forName(dbDrv);
