@@ -118,15 +118,24 @@ input{
 #bt2 {
   padding: 8px 14px;
   border: none;
+<<<<<<< HEAD
   background-color: #707070; 
   color: rgb(237, 237, 237);
+=======
+  background-color: #f75656; 
+  color: rgb(0, 0, 0);
+>>>>>>> e7a55a01085b91e2e23855c38d10ff2685a894a3
   cursor: pointer;
   margin-right: 6px;
   border-radius: 5px;
   border: 2px solid #676767;
 }
 #bt2:hover {
+<<<<<<< HEAD
   background-color: #454545; 
+=======
+  background-color: #a91111; 
+>>>>>>> e7a55a01085b91e2e23855c38d10ff2685a894a3
   cursor: pointer;
   color: rgb(255, 255, 255);
 }
@@ -220,7 +229,11 @@ img{
   align-items: center;
   justify-content: center;
   padding: 4px 10px;
+<<<<<<< HEAD
   border-radius: 15px;
+=======
+  border-radius: 999px;
+>>>>>>> e7a55a01085b91e2e23855c38d10ff2685a894a3
   font-size: 12px;
   font-weight: 700;
   line-height: 1;
@@ -236,7 +249,11 @@ img{
   align-items: center;
   justify-content: center;
   padding: 4px 10px;
+<<<<<<< HEAD
   border-radius: 15px;
+=======
+  border-radius: 999px;
+>>>>>>> e7a55a01085b91e2e23855c38d10ff2685a894a3
   font-size: 12px;
   font-weight: 700;
   line-height: 1;
@@ -244,8 +261,11 @@ img{
   background: #e0ecff;
   color: #1e40af;
   border: 1px solid #1e40af;
+<<<<<<< HEAD
 }
 
 #table{
 
+=======
+>>>>>>> e7a55a01085b91e2e23855c38d10ff2685a894a3
 }
