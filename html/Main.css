@@ -292,7 +292,7 @@
 /* footer*/
 .footer {
   height: 100px;
-  width: 1920px;
+  width: 100%;
   background-color: #c8edfd;
 }
 .footerBox {

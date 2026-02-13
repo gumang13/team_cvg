@@ -4,7 +4,7 @@
   margin: 0;
 }
 .baseWrap {
-  width: 1920px;
+  width: 100%;
   background-color: #c8edfd;
   background-image: url("https://troov.com/images/back-to-school/bg_spring-homepage.png");
 }
@@ -232,7 +232,7 @@
 /* footer*/
 .footer {
   height: 100px;
-  width: 1920px;
+  width: 100%;
   background-color: #c8edfd;
 }
 .footerBox {
