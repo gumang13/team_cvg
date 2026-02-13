@@ -56,9 +56,8 @@
 }
 .menu ul li a {
   text-decoration: none;
-  color: white;
+  background: #495057;
 }
-
 /* body */
 .body {
   width: 1200px;
